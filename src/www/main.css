@@ -1,0 +1,82 @@
+/*FONTES INCLUDES*/
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?iefix') format('eot'), url('../fonts/OpenSans-Light-webfont.woff') format('woff'), url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Light-webfont.svg#webfont') format('svg');
+}
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?iefix') format('eot'), url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Regular-webfont.svg#webfont') format('svg');
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?iefix') format('eot'), url('../fonts/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Bold-webfont.svg#webfont') format('svg');
+}
+
+html {
+  font-family: 'Open Sans Regular', sans-serif;
+}
+
+body {
+  font-family: 'Open Sans Regular', sans-serif;
+  line-height: 20px;
+}
+
+.container {width: 80%!important;}
+.mtop-50 {margin-top: -50px;}
+.sloganTitle {
+    margin-top: 43px;
+    margin-left: 4%;
+    font-size: 24px;
+}
+
+.logoTab {
+    width: 48px;
+    height: 48px;
+    background: url(logo_nix_gateway.svg) center center no-repeat;
+    background-size: 48px 48px;
+}
+.centered-horizontal {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    align-items: center;
+    -webkit-align-items: center;
+}
+.centered-absolute {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+
+.styleList {
+    border-top: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    border-bottom: none;
+    border-left: 1px solid #d9d9d9;
+    border-image: initial;
+    height: 100%;
+    overflow: hidden;
+    padding: 0px!important;
+    padding-bottom: 20px!important;
+}
+.footerList {
+    display: block;
+    position: relative;
+    margin-top: -10px;
+    max-width: 360px;
+    box-shadow: 0.2;
+}
+@media screen and (max-width: 720px) {
+    .header-title {margin-left: 20px;}
+}
