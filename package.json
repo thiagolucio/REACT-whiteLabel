@@ -30,10 +30,7 @@
     "npm": "^4.3.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
-    "react-flexbox-grid": "^0.10.2",
-    "react-grid-layout": "^0.14.3",
     "react-layout": "^1.1.0",
-    "react-resizable": "^1.6.0",
     "react-swipeable-views": "^0.11.1",
     "react-tap-event-plugin": "^2.0.1"
   }

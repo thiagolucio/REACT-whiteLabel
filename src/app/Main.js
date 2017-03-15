@@ -2,13 +2,15 @@
  * In this file, we create a React component
  * which incorporates components provided by Material-UI.
  */
-import React, {Component} from 'react';
-import {grey800, grey400} from 'material-ui/styles/colors';
+import React, { Component } from 'react';
+import {GridList, GridTile} from 'material-ui/GridList';
+import { grey800, grey400 } from 'material-ui/styles/colors';
+import Subheader from 'material-ui/Subheader';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TabWhitelabel from './tabs';
 import ListPedidos from './list';
-import TextFieldCreditPay from './formCredit';
+
 
 const style =  {
 header: {

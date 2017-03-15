@@ -1,9 +1,6 @@
 import React from 'react';
 import {List, ListItem} from 'material-ui/List';
 import Divider from 'material-ui/Divider';
-import SvgIcon from 'material-ui/SvgIcon';
-import TextField from 'material-ui/TextField';
-import {grey800, grey400} from 'material-ui/styles/colors';
 import ContentCheck from 'material-ui/svg-icons/navigation/check';
 import ContentReceipt from 'material-ui/svg-icons/action/receipt';
 
