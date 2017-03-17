@@ -16,43 +16,6 @@ export default StyleSheet.create({
     'src': 'url('../fonts/OpenSans-Bold-webfont.eot')',
     'src': 'url('../fonts/OpenSans-Bold-webfont.eot?iefix') format('eot'), url('../fonts/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Bold-webfont.svg#webfont') format('svg')'
   },
-  // TRATAMENTO DA LOGO DO NIX COMO ICONFONT
-  'fontFace': {
-    'fontFamily': ''icomoon'',
-    'src': 'url('../fonts/icomoon.eot?oowph9')',
-    'src': 'url('../fonts/icomoon.eot?oowph9#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?oowph9') format('truetype'),
-    url('../fonts/icomoon.woff?oowph9') format('woff'),
-    url('../fonts/icomoon.svg?oowph9#icomoon') format('svg')',
-    'fontWeight': 'normal',
-    'fontStyle': 'normal'
-  },
-  '[class^="icon-"]': {
-    'fontFamily': ''icomoon' !important',
-    'speak': 'none',
-    'fontStyle': 'normal',
-    'fontWeight': 'normal',
-    'fontVariant': 'normal',
-    'textTransform': 'none',
-    'lineHeight': [{ 'unit': 'px', 'value': 1 }],
-    'WebkitFontSmoothing': 'antialiased',
-    'MozOsxFontSmoothing': 'grayscale'
-  },
-  '[class*=" icon-"]': {
-    'fontFamily': ''icomoon' !important',
-    'speak': 'none',
-    'fontStyle': 'normal',
-    'fontWeight': 'normal',
-    'fontVariant': 'normal',
-    'textTransform': 'none',
-    'lineHeight': [{ 'unit': 'px', 'value': 1 }],
-    'WebkitFontSmoothing': 'antialiased',
-    'MozOsxFontSmoothing': 'grayscale'
-  },
-  'icon-logo-nix:before': {
-    'content': '"\e900"'
-  },
-  // FINAL ICONFONT COM LOGO DA NIX
   'html': {
     'fontFamily': ''Open Sans Regular', sans-serif'
   },
@@ -94,6 +57,10 @@ export default StyleSheet.create({
   'logoNixTab': {
     'background': 'url('./logo_nix_gateway.svg') no-repeat center center',
     'padding': [{ 'unit': 'px', 'value': 50 }, { 'unit': 'px', 'value': 50 }, { 'unit': 'px', 'value': 50 }, { 'unit': 'px', 'value': 50 }]
+  },
+  'noCard': {
+    'background': 'url('../img/noCartao.svg') no-repeat center center',
+    'padding': [{ 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 20 }]
   },
   'styleList': {
     'borderTop': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#d9d9d9' }],

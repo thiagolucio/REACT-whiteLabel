@@ -1,43 +1,31 @@
 import React from 'react';
 import TextField from 'material-ui/TextField';
-import SelectField from 'material-ui/SelectField';
-import MenuItem from 'material-ui/MenuItem';
+import SvgIcon from 'material-ui/SvgIcon';
+import FlatButton from 'material-ui/FlatButton';
 
-const items = [
-   {value: 0,name: 'Visa'},
-  {value: 1, name: 'Mastercard'},
-  {value: 2, name: 'Aura'},
-  {value: 3, name: 'Discover'},
-  {value: 4, name: 'Elo'},
-  {value: 5, name: 'JCB'},
-];
-for (let i = 0; i < 5; i++ ) {
-  items.push(<MenuItem value={i} key={i} primaryText={`Cartão ${i}`} />);
-}
-export default class DropDownMenuLongMenuExample extends Component {
-  state = {
-    value: 6,
-  };
-
-  handleChange = (event, index, value) => {
-    this.setState({value});
-  };
-};
 export default class TextFieldCreditPay extends React.Component {
+    state = {
+        value: null,
+    };
+    handleChange = (event, index, value) => this.setState({value});
+
+
     render() {
         return (
-            <div className="row">
-                <div className="col-md-10">      
-                    <TextField hintText="Digite o número do cartão de crédito" fullWidth={true} /><br /> <br />
-                    <SelectField value={this.state.value} onChange={this.handleChange} maxHeight={200} >
-                        {items}
-                    </SelectField>      
-                <TextField hintText="Nome impresso no cartão."/><br/>
+            <button className="column">
+                <TextField hintText="Número do Cartão de Crédito."/>
+                <img src="noCartao.png" className="footerList"/>
+                <FlatButton icon={<SvgIcon className="noCard"/>} />
+
+                <br/><br/>
                 <TextField id="text-field-default" defaultValue="Default Value"/><br/>
-                <TextField hintText="Validade" floatingLabelText="Floating Label Text"/><br/>
-                <TextField defaultValue="Código de segurança (CVV)" floatingLabelText="Floating Label Text"/><br/>
-                <TextField hintText="Digite o número de parcelas" floatingLabelText="Parcelas" floatingLabelFixed={true} /><br />
-            </div>    
+                <TextField hintText="Hint Text" floatingLabelText="Floating Label Text"/><br/>
+                <TextField defaultValue="Default Value" floatingLabelText="Floating Label Text"/><br/>
+                <TextField hintText="Hint Text" floatingLabelText="Fixed Floating Label Text" floatingLabelFixed={true}/><br/>
+                <TextField hintText="Password Field" floatingLabelText="Password" type="password"/><br/>
+                <TextField hintText="MultiLine with rows: 2 and rowsMax: 4" multiLine={true} rows={2} rowsMax={4}/><br/>
+                <TextField hintText="Message Field" floatingLabelText="MultiLine and FloatingLabel" multiLine={true} rows={2}/><br/>
+                <TextField hintText="Full width" fullWidth={true}/>
             </div>
         );
     }

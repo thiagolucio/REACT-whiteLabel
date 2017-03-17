@@ -3,7 +3,6 @@ import {render} from 'react-dom';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import SwipeableViews from 'react-swipeable-views';
 import TextFieldCreditPay from './formCredit';
-import FontIcon from 'material-ui/FontIcon';
 import SvgIcon from 'material-ui/SvgIcon';
 
 
@@ -11,8 +10,8 @@ const styles = {
     contentTitleBodyTabs: {
         fontSize: 24,
         paddingTop: 16,
-        marginBottom: 12,
-        fontWeight: 400,
+        marginBottom: 50,
+        fontWeight: 700,
     },
     slide: {
         padding: 10,
@@ -22,6 +21,7 @@ const styles = {
         padding: 20,
         fontSize: 16,
         color: '#333',
+        fontWeight: 700
     }
 };
 
@@ -49,7 +49,7 @@ export default class TabWhitelabel extends React.Component {
                 <SwipeableViews index={this.state.slideIndex} onChangeIndex={this.handleChange}>
                     <div className="col-md-12">
                         <h2 style={styles.contentTitleBodyTabs}>Conteúdo do cartão de crédito</h2>
-                        <TextFieldCreditPay></TextFieldCreditPay>
+                        <TextFieldCreditPay />
                     </div>
                     <div style={styles.slide}>
                         <h2 style={styles.contentTitleBodyTabs}>Conteúdo do Boleto Bancário</h2>
