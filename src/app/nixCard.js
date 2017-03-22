@@ -1,13 +1,10 @@
 import React from 'react';
 import TextField from 'material-ui/TextField';
 import SelectField from 'material-ui/SelectField';
-import DatePicker from 'material-ui/DatePicker';
-import MenuItem from 'material-ui/MenuItem';
 import IconButton from 'material-ui/IconButton';
 import RaisedButton from 'material-ui/RaisedButton';
 
-
-export default class TextFieldCreditPay extends React.Component {
+export default class TabNixCard extends React.Component {
     state = {
         value: 1,
     };
@@ -17,21 +14,14 @@ export default class TextFieldCreditPay extends React.Component {
         return (
             <div className="row">
                 <div className="col-md-6">
-                    <TextField hintText="Número do Cartão de Crédito." style={{"width":"88%"}}/>
-                        <img src="arrow-drop-down.svg" style={{"verticalAlign":"middle","marginTop":"-20"}}/>
+                    <TextField hintText="Número do Cartão de Crédito." style={{"width": "88%" }}/>
+                    <img src="arrow-drop-down.svg" style={{"verticalAlign": "middle", "marginTop": "-20"}}/>
                     <IconButton>
                         <img src="nocards.svg" width={40} height={40}/>
                     </IconButton>
-                    <TextField hintText="Nome Impresso no Cartão." fullWidth={true} />
-                <div className="row">
-                    <div className="col-md-6">
-                        <DatePicker hintText="Validade" container="inline" mode="landscape"/>
-                    </div>
-                    <div className="col-md-6">
-                        <TextField hintText="Código Segurança (CVV)."/>
-                    </div>
+                    <TextField hintText="Número do Token." fullWidth={true}/>
                 </div>
-                    <div className="col-md-12" >
+                <div className="col-md-6">
                     <SelectField  floatingLabelText="Parcelas" value={this.state.value}  onChange={this.handleChange} fullWidth={true}>
                         <MenuItem value={1} primaryText="1x Vezes sem juros" />
                         <MenuItem value={2} primaryText="2x Vezes sem juros" />
@@ -46,12 +36,9 @@ export default class TextFieldCreditPay extends React.Component {
                         <MenuItem value={11} primaryText="11x Vezes sem juros" />
                         <MenuItem value={12} primaryText="12x Vezes sem juros" />
                     </SelectField>
-                    </div>
-                    <div className="col-md-12">
-                        <h5 className="totalField"><b>Valor total: <span id="total-amount"></span></b></h5>
-                            <RaisedButton label="CONCLUIR PAGAMENTO" primary={true} className="primary"/>
-                    </div>
+                    <h5 className="totalField"><b>Valor total:<span id="total-amount"></span></b></h5>
                 </div>
+                <RaisedButton label="CONCLUIR PAGAMENTO" primary={true} className="primary"/>
             </div>
         );
     }
