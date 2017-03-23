@@ -4,7 +4,9 @@ import SwipeableViews from 'react-swipeable-views';
 import SvgIcon from 'material-ui/SvgIcon';
 import TextFieldCreditPay from './formCredit';
 import TabBankTicket from './bankTicket';
+import TabDebitCard from './debitCard';
 import TabNixCard from './nixCard';
+
 
 const styles = {
     contentTitleBodyTabs: {

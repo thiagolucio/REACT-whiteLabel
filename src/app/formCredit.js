@@ -18,9 +18,9 @@ export default class TextFieldCreditPay extends React.Component {
             <div className="row">
                 <div className="col-md-6">
                     <TextField hintText="Número do Cartão de Crédito." style={{"width":"88%"}}/>
-                        <img src="arrow-drop-down.svg" style={{"verticalAlign":"middle","marginTop":"-20"}}/>
+                        <img src="./img/arrow-drop-down.svg" className="verticalAlignMiddle mtop-20"/>
                     <IconButton>
-                        <img src="nocards.svg" width={40} height={40}/>
+                        <img src="./img/noCard.svg" width={40} height={40}/>
                     </IconButton>
                     <TextField hintText="Nome Impresso no Cartão." fullWidth={true} />
                 <div className="row">

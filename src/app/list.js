@@ -4,10 +4,9 @@ import Divider from 'material-ui/Divider';
 import ContentCheck from 'material-ui/svg-icons/navigation/check';
 import ContentReceipt from 'material-ui/svg-icons/action/receipt';
 
-
 const style = {
     textList: { fontSize: 14, },
-    titleList: { fontSize: 18,color: '#333',fontWeight: '400', backgroundColor: '#bdbdbd',padding: 18, borderBottom: '2px solid #333' },
+    titleList: { fontSize: 18,color: '#333',fontWeight: '400', backgroundColor: '#eeeeee',padding: 18, borderBottom: '2px solid #1E88E5' },
 };
 export default class ListPedidos extends React.Component {
 
@@ -27,7 +26,7 @@ export default class ListPedidos extends React.Component {
                     <span style={style.textList}>Celular Samsung Galaxy S7 - R$ 1999,99</span>
                 </ListItem>
               </List>
-              <img src="bottom-tear.svg" className="footerList"/>
+              <img src="./img/bottom-tear.svg" className="footerList"/>
             </div>
         );
     }

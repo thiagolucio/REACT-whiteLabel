@@ -7,7 +7,7 @@ export default class TabBankTicket extends React.Component {
         return (
             <div className="row">
                 <div className="col-md-12">
-                    <img src="barcode.svg" width={200} height={100} className="centered-horizontal"/>
+                    <img src="./img/barcode.svg" width={200} height={100} className="centered-horizontal"/>
                 </div>
                 <div className="col-md-4"></div>
                 <div className="col-md-4">

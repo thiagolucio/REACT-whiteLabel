@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { grey800, grey400 } from 'material-ui/styles/colors';
+import { blue600, grey200, blue500 } from 'material-ui/styles/colors';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TabWhitelabel from './tabs';
@@ -14,8 +14,11 @@ header: {
 
 const muiTheme = getMuiTheme({
     palette: {
-        primary1Color: grey400,
-        accent1Color: grey800,
+        primary1Color: grey200,
+        accent1Color: blue600,
+    },
+    button: {
+        accent2Color:  blue500,
     },
 });
 
@@ -30,7 +33,7 @@ class Main extends Component {
                 <div className="container centered-horizontal">
                         <div className="row centered-horizontal">
                             <div className="col-md-3 end-lg end-md">
-                                <img src="logo_nix_gateway.svg" width="250" height="250"/>
+                                <img src="./img/logo_nix_gateway.svg" width="250" height="250"/>
                             </div>
                             <div className="col-md-9">
                                 <h3 className="sloganTitle"><b>SELECIONE A FORMA DE PAGAMENTO</b></h3>

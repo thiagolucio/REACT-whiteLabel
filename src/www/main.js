@@ -16,8 +16,14 @@ export default StyleSheet.create({
     "container": {
         "width": "80%!important"
     },
+    "mtop-20": {
+        "marginTop": -20
+    },
     "mtop-50": {
         "marginTop": -50
+    },
+    "verticalAlignMiddle": {
+        "verticalAlign": "middle"
     },
     "sloganTitle": {
         "marginTop": 43,
@@ -45,18 +51,11 @@ export default StyleSheet.create({
         "WebkitAlignItems": "center"
     },
     "logoNixTab": {
-        "background": "url('./logo_nix_gateway.svg') no-repeat center center",
+        "background": "url('./img/logo_nix_gateway.svg') no-repeat center center",
         "paddingTop": 50,
         "paddingRight": 50,
         "paddingBottom": 50,
         "paddingLeft": 50
-    },
-    "noCard": {
-        "background": "url('../img/noCard.svg') no-repeat center center",
-        "paddingTop": 20,
-        "paddingRight": 20,
-        "paddingBottom": 20,
-        "paddingLeft": 20
     },
     "styleList": {
         "borderTop": "1px solid #d9d9d9",
@@ -90,7 +89,8 @@ export default StyleSheet.create({
         "paddingLeft": 16
     },
     "primary": {
-        "background": "#2979ff!important"
+        "background": "#2979ff!important",
+        "backgroundColor": "#2979ff!important"
     },
     "text-field-styles": {
         "paddingTop": 26,
