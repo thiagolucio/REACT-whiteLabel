@@ -48,7 +48,7 @@ export default class TabWhitelabel extends React.Component {
                     <Tab icon={<SvgIcon className="logoNixTab"/>} value={3} style={styles.Tab}/>
                 </Tabs>
                 <SwipeableViews index={this.state.slideIndex} onChangeIndex={this.handleChange}>
-                    <div className="col-md-12">
+                    <div className="col-md-12" classID="cartao-credito">
                         <h2 style={styles.contentTitleBodyTabs}>Cartão de crédito</h2>
                         <TextFieldCreditPay />
                     </div>

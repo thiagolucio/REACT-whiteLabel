@@ -26,7 +26,7 @@ export default StyleSheet.create({
         "verticalAlign": "middle"
     },
     "sloganTitle": {
-        "marginTop": 43,
+        "marginTop": "120px!important",
         "marginLeft": "4%",
         "fontSize": 24
     },

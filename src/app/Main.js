@@ -5,12 +5,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TabWhitelabel from './tabs';
 import ListPedidos from './list';
 
-const style =  {
-header: {
-    flex: 1,
-    alignItems: 'center',
-}
-};
 
 const muiTheme = getMuiTheme({
     palette: {
@@ -30,13 +24,13 @@ class Main extends Component {
     render() {
         return (
             <MuiThemeProvider muiTheme={muiTheme}>
-                <div className="container centered-horizontal">
+                <div className="container">
                         <div className="row centered-horizontal">
                             <div className="col-md-3 end-lg end-md">
                                 <img src="./img/logo_nix_gateway.svg" width="250" height="250"/>
                             </div>
                             <div className="col-md-9">
-                                <h3 className="sloganTitle"><b>SELECIONE A FORMA DE PAGAMENTO</b></h3>
+                                <h1 className="sloganTitle"><b>SELECIONE A FORMA DE PAGAMENTO</b></h1>
                             </div>
                         </div>
                         <div className="row">

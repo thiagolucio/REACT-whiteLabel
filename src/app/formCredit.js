@@ -2,9 +2,11 @@ import React from 'react';
 import TextField from 'material-ui/TextField';
 import SelectField from 'material-ui/SelectField';
 import DatePicker from 'material-ui/DatePicker';
-import MenuItem from 'material-ui/MenuItem';
 import IconButton from 'material-ui/IconButton';
+import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
+
+
 
 
 export default class TextFieldCreditPay extends React.Component {
@@ -17,11 +19,12 @@ export default class TextFieldCreditPay extends React.Component {
         return (
             <div className="row">
                 <div className="col-md-6">
-                    <TextField hintText="Número do Cartão de Crédito." style={{"width":"88%"}}/>
+                    <TextField hintText="Número do Cartão de Crédito." style={{"width":"88%"}} classID="numero-cartao"/>
                         <img src="./img/arrow-drop-down.svg" className="verticalAlignMiddle mtop-20"/>
                     <IconButton>
-                        <img src="./img/noCard.svg" width={40} height={40}/>
+                        <img src="./img/noCard.svg" width={40} height={40} classID="cardImg"/>
                     </IconButton>
+
                     <TextField hintText="Nome Impresso no Cartão." fullWidth={true} />
                 <div className="row">
                     <div className="col-md-6">
