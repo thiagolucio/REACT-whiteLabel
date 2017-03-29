@@ -2,11 +2,8 @@ import React from 'react';
 import TextField from 'material-ui/TextField';
 import SelectField from 'material-ui/SelectField';
 import DatePicker from 'material-ui/DatePicker';
-import IconButton from 'material-ui/IconButton';
 import MenuItem from 'material-ui/MenuItem';
-import RaisedButton from 'material-ui/RaisedButton';
-
-
+import SelectCreditCard from './selectCardButton';
 
 
 export default class TextFieldCreditPay extends React.Component {
@@ -19,19 +16,16 @@ export default class TextFieldCreditPay extends React.Component {
         return (
             <div className="row">
                 <div className="col-md-6">
-                    <TextField hintText="Número do Cartão de Crédito." style={{"width":"88%"}} classID="numero-cartao"/>
-                        <img src="./img/arrow-drop-down.svg" className="verticalAlignMiddle mtop-20"/>
-                    <IconButton>
-                        <img src="./img/noCard.svg" width={40} height={40} classID="cardImg"/>
-                    </IconButton>
+                    <TextField hintText="Número do Cartão de Crédito."  style={{"width":"88%"}} id="numero-cartao"/>
+                    <SelectCreditCard/>
 
-                    <TextField hintText="Nome Impresso no Cartão." fullWidth={true} />
-                <div className="row">
+                <TextField hintText="Nome Impresso no Cartão." fullWidth={true} id="nome-cartao"/>
+                 <div className="row">
                     <div className="col-md-6">
-                        <DatePicker hintText="Validade" container="inline" mode="landscape"/>
+                        <DatePicker hintText="Validade" container="inline" mode="landscape" id="validade-cartao"/>
                     </div>
                     <div className="col-md-6">
-                        <TextField hintText="Código Segurança (CVV)."/>
+                        <TextField hintText="Código Segurança (CVV)." id="cod-secure"/>
                     </div>
                 </div>
                     <div className="col-md-12" >
@@ -52,7 +46,7 @@ export default class TextFieldCreditPay extends React.Component {
                     </div>
                     <div className="col-md-12">
                         <h5 className="totalField"><b>Valor total: <span id="total-amount"></span></b></h5>
-                            <RaisedButton label="CONCLUIR PAGAMENTO" primary={true} className="primary"/>
+                        <button className="bt btn-primary btn-lg gateway-button" style={{"borderRadius":"0","border":"0"}}>CONCLUIR PAGAMENTO</button>
                     </div>
                 </div>
             </div>

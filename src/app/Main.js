@@ -6,13 +6,14 @@ import TabWhitelabel from './tabs';
 import ListPedidos from './list';
 
 
+
 const muiTheme = getMuiTheme({
     palette: {
         primary1Color: grey200,
         accent1Color: blue600,
     },
     button: {
-        accent2Color:  blue500,
+        accent1Color:  blue500,
     },
 });
 

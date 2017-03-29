@@ -8,6 +8,7 @@ import TabDebitCard from './debitCard';
 import TabNixCard from './nixCard';
 
 
+
 const styles = {
     contentTitleBodyTabs: {
         fontSize: 24,

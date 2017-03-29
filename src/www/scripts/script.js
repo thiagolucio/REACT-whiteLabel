@@ -53,7 +53,7 @@ $("form").submit(function() {
 });
 
     $(document).ready(function() {
-        $('#total-amount').text($('#parcelas').val().split('|')[1]);
+        $('#total-amount').text($('#parcelas').val().split('|')[1]);//erro nesse split aqui
         $('#credit-card-tab').click(function() {
             setAmountSelect('#parcelas')
         });

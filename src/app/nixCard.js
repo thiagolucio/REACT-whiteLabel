@@ -2,8 +2,6 @@ import React from 'react';
 import TextField from 'material-ui/TextField';
 import MenuItem from 'material-ui/MenuItem';
 import SelectField from 'material-ui/SelectField';
-import IconButton from 'material-ui/IconButton';
-import RaisedButton from 'material-ui/RaisedButton';
 
 export default class TabNixCard extends React.Component {
     state = {
@@ -15,11 +13,7 @@ export default class TabNixCard extends React.Component {
         return (
             <div className="col-md-12">
                 <div className="col-md-6">
-                    <TextField hintText="Número do Cartão de Crédito." style={{"width": "88%" }}/>
-                    <img src="./img/arrow-drop-down.svg" className="verticalAlignMiddle mtop-20"/>
-                    <IconButton>
-                        <img src="./img/noCard.svg" width={40} height={40}/>
-                    </IconButton>
+                    <TextField hintText="CPF" fullWidth={true}/>
                     <TextField hintText="Número do Token." fullWidth={true}/>
                         <SelectField  floatingLabelText="Parcelas" value={this.state.value}  onChange={this.handleChange} fullWidth={true}>
                             <MenuItem value={1} primaryText="1x Vezes sem juros" />
@@ -36,12 +30,8 @@ export default class TabNixCard extends React.Component {
                             <MenuItem value={12} primaryText="12x Vezes sem juros" />
                         </SelectField>
                         <h5 className="totalField"><b>Valor total:<span id="total-amount"></span></b></h5>
-
-                        <RaisedButton label="CONCLUIR PAGAMENTO" primary={true} className="primary"/>
-
-
+                    <button className="bt btn-primary btn-lg gateway-button" style={{"borderRadius":"0","border":"0"}}>CONCLUIR PAGAMENTO</button>
                 </div>
-
             </div>
         );
     }

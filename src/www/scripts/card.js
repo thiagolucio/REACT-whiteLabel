@@ -2777,6 +2777,6 @@ $(document).ready(function() {
 
     function cardNumberTypingDebit() {
         var image = !!$("input[name=SelectedBrandDebit]:checked").val() ? String($("input[name=SelectedBrandDebit]:checked").val()).toLowerCase().concat('.svg') : 'noCartao.png';
-        $('#cardImgDebit').attr('src', 'imgs/card-brands/'.concat(image));
+        $('#cardImgDebit').attr('src', 'imgs/'.concat(image));
     }
 });

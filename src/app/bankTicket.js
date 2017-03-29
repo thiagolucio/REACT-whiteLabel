@@ -1,5 +1,4 @@
 import React from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
 
 
 export default class TabBankTicket extends React.Component {
@@ -12,7 +11,7 @@ export default class TabBankTicket extends React.Component {
                     <div className="col-md-3"></div>
                         <div className="col-md-6">
                             <h5 className="totalField"><b>Valor total: <span id="total-amount"></span></b></h5>
-                            <RaisedButton label="CONCLUIR PAGAMENTO" primary={true} className="primary"/>
+                            <button className="bt btn-primary btn-lg gateway-button centered-horizontal" style={{"borderRadius":"0","border":"0"}}>CONCLUIR PAGAMENTO</button>
                         </div>
                     <div className="col-md-3"></div>
             </div>
