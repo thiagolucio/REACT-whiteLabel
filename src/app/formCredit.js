@@ -28,7 +28,7 @@ export default class TextFieldCreditPay extends React.Component {
                         <TextField hintText="Código Segurança (CVV)." id="cod-secure"/>
                     </div>
                 </div>
-                    <div className="col-md-12" >
+                    <div className="col-md-12">
                     <SelectField  floatingLabelText="Parcelas" value={this.state.value}  onChange={this.handleChange} fullWidth={true}>
                         <MenuItem value={1} primaryText="1x Vezes sem juros" />
                         <MenuItem value={2} primaryText="2x Vezes sem juros" />

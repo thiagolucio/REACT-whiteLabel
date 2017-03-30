@@ -8,7 +8,7 @@ function prevTab(elem) {
 }
 
 jQuery(document).ready(function($) {
-    new Card({
+     Card = new Card({
         form: document.querySelector('.form-credit'),
         container: '.card-wrapper-credit',
         formSelectors: {

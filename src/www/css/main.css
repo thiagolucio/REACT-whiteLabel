@@ -23,10 +23,9 @@ body { font-family: 'Open Sans Regular', sans-serif;  line-height: 20px;}
 .mtop-20 {margin-top: -20px;}
 .mtop-50 {margin-top: -50px;}
 .verticalAlignMiddle {vertical-align: middle;}
-.sloganTitle {
-    margin-top: 120px!important;
-    margin-left: 4%;
+.topSlogan {
     font-size: 24px;
+    text-align: left;
 }
 .espacoLogo {position: absolute;}
 .centered-horizontal {
@@ -91,7 +90,27 @@ body { font-family: 'Open Sans Regular', sans-serif;  line-height: 20px;}
     background-color: #1FD9C1!important;
     border: 0px!important;
 }
+.card-wrapper-credit { margin: 25px 0 50px 10px; }
 .text-field-styles {padding: 26px;}
+Paper {
+    padding: 50px;
+}
+.logNix {
+    margin-top: 5px;
+    width: 200px;
+    height: auto;
+    text-align: center;
+}
 @media screen and (max-width: 720px) {
+    .logNix {
+        display: none;
+        /*margin-top: 5px;
+        width: 120px;
+        height: auto;
+        text-align: center;*/
+    }
+    .topSlogan {
+        font-size: 14px!important;        
+    }
     .header-title {margin-left: 20px;}
 }
