@@ -12,7 +12,6 @@ import Paper from 'material-ui/Paper';
 
 
 
-
 const styles = {
     contentTitleBodyTabs: {
         fontSize: 24,

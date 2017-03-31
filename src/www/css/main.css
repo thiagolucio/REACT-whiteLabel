@@ -22,6 +22,7 @@ body { font-family: 'Open Sans Regular', sans-serif;  line-height: 20px;}
 .container {width: 80%!important;}
 .mtop-20 {margin-top: -20px;}
 .mtop-50 {margin-top: -50px;}
+.mtop50{margin-top: 50px;}
 .verticalAlignMiddle {vertical-align: middle;}
 .topSlogan {
     font-size: 24px;
@@ -101,7 +102,26 @@ Paper {
     height: auto;
     text-align: center;
 }
+.titleList {
+    font-size: 18px;
+    color: black!important;
+    font-weight: 400;
+    background-color: #eeeeee;
+    border-bottom: 2px solid #1E88E5;
+    margin: 0px;
+}
+.toolbar-top {
+    height: 100px!important;
+    margin-bottom: 21px;
+    background-color: transparent!important;
+    color: rgba(0, 0, 0, 1.0);
+}
 @media screen and (max-width: 720px) {
+    .toolbar-top {
+        height: 30px!important;
+        margin-bottom: 10px;
+        color: #333!important;
+    }
     .logNix {
         display: none;
         /*margin-top: 5px;
@@ -110,7 +130,17 @@ Paper {
         text-align: center;*/
     }
     .topSlogan {
-        font-size: 14px!important;        
+        font-size: 14px!important;
+        line-height: 20px;
+        color: rgba(0, 0, 0, 1.0);
     }
     .header-title {margin-left: 20px;}
+    .titleList {
+        font-size: 12px;
+        color: black!important;
+        font-weight: 400;
+        background-color: #eeeeee;
+        border-bottom: 2px solid #1E88E5;
+        margin: 0px;
+    }
 }

@@ -22,6 +22,9 @@ export default StyleSheet.create({
     "mtop-50": {
         "marginTop": -50
     },
+    "mtop50": {
+        "marginTop": 50
+    },
     "verticalAlignMiddle": {
         "verticalAlign": "middle"
     },
@@ -124,5 +127,22 @@ export default StyleSheet.create({
         "width": 200,
         "height": "auto",
         "textAlign": "center"
+    },
+    "titleList": {
+        "fontSize": 18,
+        "color": "black!important",
+        "fontWeight": "400",
+        "backgroundColor": "#eeeeee",
+        "borderBottom": "2px solid #1E88E5",
+        "marginTop": 0,
+        "marginRight": 0,
+        "marginBottom": 0,
+        "marginLeft": 0
+    },
+    "toolbar-top": {
+        "height": "100px!important",
+        "marginBottom": 21,
+        "backgroundColor": "transparent!important",
+        "color": "rgba(0, 0, 0, 1.0)"
     }
 });

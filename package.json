@@ -30,6 +30,7 @@
     "install": "^0.8.7",
     "material-ui": "^0.16.7",
     "npm": "^4.3.0",
+    "rc-collapse": "^1.6.12",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-pure-grid": "^2.1.1",
