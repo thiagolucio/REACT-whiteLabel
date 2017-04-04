@@ -33,6 +33,7 @@
     "rc-collapse": "^1.6.12",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "react-native-accordion": "^1.0.1",
     "react-pure-grid": "^2.1.1",
     "react-swipeable-views": "^0.11.1",
     "react-tap-event-plugin": "^2.0.1"

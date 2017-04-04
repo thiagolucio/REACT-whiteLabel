@@ -6,6 +6,7 @@ import ContentCheck from 'material-ui/svg-icons/navigation/check';
 import ContentReceipt from 'material-ui/svg-icons/action/receipt';
 import CollapseList from './collapseTicket';
 
+
 const style = {
     textList: {
         fontSize: 14

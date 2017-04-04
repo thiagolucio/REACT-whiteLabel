@@ -22,6 +22,9 @@ export default StyleSheet.create({
     "mtop-50": {
         "marginTop": -50
     },
+    "margin-bottom50": {
+        "marginBottom": 50
+    },
     "mtop50": {
         "marginTop": 50
     },
@@ -60,10 +63,8 @@ export default StyleSheet.create({
         "paddingLeft": 50
     },
     "styleList": {
-        "borderTop": "1px solid #d9d9d9",
-        "borderRight": "1px solid #d9d9d9",
+        "border": "1px solid #d9d9d9",
         "borderBottom": "none",
-        "borderLeft": "1px solid #d9d9d9",
         "borderImage": "initial",
         "height": "100%",
         "overflow": "hidden",
@@ -137,7 +138,8 @@ export default StyleSheet.create({
         "marginTop": 0,
         "marginRight": 0,
         "marginBottom": 0,
-        "marginLeft": 0
+        "marginLeft": 0,
+        "textAlign": "center"
     },
     "toolbar-top": {
         "height": "100px!important",

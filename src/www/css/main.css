@@ -22,6 +22,7 @@ body { font-family: 'Open Sans Regular', sans-serif;  line-height: 20px;}
 .container {width: 80%!important;}
 .mtop-20 {margin-top: -20px;}
 .mtop-50 {margin-top: -50px;}
+.margin-bottom50 {margin-bottom: 50px;}
 .mtop50{margin-top: 50px;}
 .verticalAlignMiddle {vertical-align: middle;}
 .topSlogan {
@@ -52,10 +53,8 @@ body { font-family: 'Open Sans Regular', sans-serif;  line-height: 20px;}
 }
 
 .styleList {
-    border-top: 1px solid #d9d9d9;
-    border-right: 1px solid #d9d9d9;
+    border: 1px solid #d9d9d9;
     border-bottom: none;
-    border-left: 1px solid #d9d9d9;
     border-image: initial;
     height: 100%;
     overflow: hidden;
@@ -109,6 +108,7 @@ Paper {
     background-color: #eeeeee;
     border-bottom: 2px solid #1E88E5;
     margin: 0px;
+    text-align: center;
 }
 .toolbar-top {
     height: 100px!important;
@@ -142,5 +142,8 @@ Paper {
         background-color: #eeeeee;
         border-bottom: 2px solid #1E88E5;
         margin: 0px;
+    }
+    .styleList {
+        border: none;
     }
 }

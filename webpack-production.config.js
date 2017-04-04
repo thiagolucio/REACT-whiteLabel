@@ -36,13 +36,24 @@ const config = {
     ], path.resolve(__dirname, 'src')),
   ],
   module: {
-    loaders: [
-      {
-        test: /\.js$/, // All .js files
-        loaders: ['babel-loader'], // react-hot is like browser sync and babel loads jsx and es6-7
-        exclude: [nodeModulesPath],
-      },
-    ],
+      loaders: [
+        {
+          test: /\.js|.jsx$/, // All .js files
+          loaders: ['babel-loader'],
+          exclude: [nodeModulesPath],
+          query: {
+              presets:['es2015','react'],
+              plugins: [["react-transform", {
+                  "transforms": [{
+                      "transform": "react-transform-hmr",
+                      "imports": ["react"],
+                      "locals": ["module"]
+                  }]
+              }
+          ]]
+          }
+        },
+      ],
   },
 };
 
