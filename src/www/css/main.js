@@ -62,6 +62,20 @@ export default StyleSheet.create({
         "paddingBottom": 50,
         "paddingLeft": 50
     },
+    "IconCredit": {
+        "background": "url('../img/ic_payment_48px.svg') no-repeat center center",
+        "paddingTop": 50,
+        "paddingRight": 50,
+        "paddingBottom": 50,
+        "paddingLeft": 50
+    },
+    "IconTabTicket": {
+        "background": "url('../img/barcode.svg') no-repeat center center",
+        "paddingTop": 50,
+        "paddingRight": 50,
+        "paddingBottom": 50,
+        "paddingLeft": 50
+    },
     "styleList": {
         "border": "1px solid #d9d9d9",
         "borderBottom": "none",

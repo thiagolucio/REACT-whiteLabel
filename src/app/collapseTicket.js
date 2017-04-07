@@ -22,7 +22,7 @@ const style = {
 };
 
 const styles = {
-    active: {display: 'inherit'},
+    active: { display: 'inherit'},
     inactive: {display: 'none'}
 }
 

@@ -47,11 +47,6 @@ body { font-family: 'Open Sans Regular', sans-serif;  line-height: 20px;}
     align-items: center;
     -webkit-align-items: center;
 }
-.logoNixTab {
-  background: url('../img/logo_nix_gateway.svg') no-repeat center center;
-  padding: 50px;
-}
-
 .styleList {
     border: 1px solid #d9d9d9;
     border-bottom: none;
@@ -116,11 +111,32 @@ Paper {
     background-color: transparent!important;
     color: rgba(0, 0, 0, 1.0);
 }
+/*ICONES TAB QUANDO MOBILE*/
+.IconCredit {
+    background: url('../img/credit_card_black_36x36.png') no-repeat center center;
+    padding: 40px;
+}
+.IconTabTicket {
+    background: url('../img/barcode.svg') no-repeat center center;
+    padding: 50px;
+}
+.IconTabDebit {
+    background: url('../img/attach_money_black_36x36.png') no-repeat center center;
+    padding: 50px;
+}
+.logoNixTab {
+    background: url('../img/logo_nix_gateway.svg') no-repeat center center;
+    padding: 40px;
+}
 @media screen and (max-width: 720px) {
     .toolbar-top {
         height: 30px!important;
         margin-bottom: 10px;
         color: #333!important;
+    }
+    .logoNixTab {
+      background: url('../img/logo_nix.svg') no-repeat center center;
+      padding: 30px;
     }
     .logNix {
         display: none;
@@ -145,5 +161,11 @@ Paper {
     }
     .styleList {
         border: none;
+        -webkit-transition: all 0.3s ease-in-out!important;
+        transition: all 0.3s ease-in-out!important;
+    }
+    .styleList.active {
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 }
