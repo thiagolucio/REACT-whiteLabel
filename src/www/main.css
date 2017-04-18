@@ -1,0 +1,28 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+
+.header {
+    height: 150px;
+    width: 400px;
+    background: url(logo_nix_gateway.svg) center center no-repeat;
+    background-size: 400px 500px;
+}
+
+.centered-horizontal {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.topSlogan { margin-top: 110px; }
